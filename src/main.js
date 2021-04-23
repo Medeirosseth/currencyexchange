@@ -10,10 +10,12 @@ $("button#convert").on("click", (event) => {
   let promise = Convert.convertMoney();
   promise.then(function (response) {
     const body = JSON.parse(response);
-    //const USD = body.conversion_rates.usd;
-    const successfull = body.result;
+    const USD = body.conversion_rates.usd;
     console.log(successfull);
     
     $("#showResult").text(usdAmount);
+
+  }, function (error) {
+     $("showErrors").text(`There was an error processing your request: ${error}`):
   });
 });
