@@ -9,13 +9,23 @@
 </html>
 <body>
   <h1> CURRENCY EXCHANGER</h1>
-  <div class="container">
+  <div class="container" id="box">
     <form id="formOne">
-      <input type="number" id="inputOne" placeholder="US Dollars">
-      <p> Convert To </p>
+      <input type="number" id="currencyFrom" placeholder="US Dollars">
       <select name="converter" id="converter">
-        <option value="euro">Euro</option>
-      </select>
+        <option value="USA" selected >United States(USA)</option>
+        <option value="EUR" >Euro (EUR)</option>
+        <option value="INR" >Indian Rupee (INR)</option>
+        <option value="JPY" >Japanese Yen (JPY)</option>
+       </select>
+       <br>
+      <input type="number" id="currencyTo" placeholder="US Dollars">
+      <select name="converter" id="converter">
+        <option value="USA" selected >United States(USA)</option>
+        <option value="EUR" >Euro (EUR)</option>
+        <option value="INR" >Indian Rupee (INR)</option>
+        <option value="JPY" >Japanese Yen (JPY)</option>
+       </select>
       <br>
       <button type="button" id="convert" class="btn">Submit</button>
     </form>

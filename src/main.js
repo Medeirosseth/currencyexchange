@@ -7,12 +7,13 @@ import Convert from './currency-exchanger';
 $("button#convert").on("click", (event) => {
   event.preventDefault();
   const usdAmount = $("#inputOne").val();
-  console.log(usdAmount);
+  const TO = $("select#currencyFrom").val()
+  const FROM = $("select#currencyTO").val()
   let promise = Convert.convertMoney();
   promise.then(function (response) {
     const body = JSON.parse(response);
-    const USD = body.conversion_rate;
-    const money = parseFloat(USD / usdAmount);
+    const currencyEuro = body.conversion_rate;
+    const money = (currencyEuro * usdAmount);
    
     $("#showResult").text(money);
 
