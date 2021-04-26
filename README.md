@@ -1,39 +1,59 @@
-# _{Application Name}_
+#### Currency Exchange
 
-#### _{Brief description of application}_
-
-#### By _**{List of contributors}**_
+#### By _**:neckbeard:Seth Medeiros**_
 
 ## Technologies Used
 
-* _List all_
-* _the major technologies_
-* _you used in your project_
-* _here_
+- _HTML_
+- _CSS_
+- _Javascript_
+- _Jquery_
+- _Webpack_
+- _ExchangeRate-API_
 
-## Description
+## Description:memo:
 
-_{This is a detailed description of your application. Give as much detail as needed to explain what the application does as well as any other information you want users or other developers to have.}_
+_This application is used to demonstrate the understanding of APIs using ExchangeRate-API. Users enter an amount in up to 6 currencys and exchange them to up to 6 currencys _
 
-## Setup/Installation Requirements
+<details>
+  <summary>Setup/installation Requirements:open_file_folder:</summary>
+  
+## Setup and Use
 
-* _This is a great place_
-* _to list setup instructions_
-* _in a simple_
-* _easy-to-understand_
-* _format_
+### Prerequisites
 
-_{Leave nothing to chance! You want it to be easy for potential users, employers and collaborators to run your app. Do I need to run a server? How should I set up my databases? Is there other code this application depends on? We recommend deleting the project from your desktop, re-cloning the project from GitHub, and writing down all the steps necessary to get the project working again.}_
+- [Node](https://nodejs.org/en/)
+- A text editor like [VS Code](https://code.visualstudio.com/)
 
-## Known Bugs
+### Installation
 
-* _Any known issues_
-* _should go here_
+1. Clone the repository: `$ git clone https://github.com/Medeirosseth/currencyexchange.git`
+2. Navigate to the `currencyexchange/` directory on your computer
+3. Open with your preferred text editor to view the code base
+4. To start a development server and view the project in the browser:
+   - Navigate to `currencyexchange/` in your command line
+   - Run the command `npm install` to install dependencies
+   - Optionally, run the commmand `npm run build` to make a bundle of the files
+   - Finally, run the command `npm run start` to start a development server
+5. To run tests, navigate to `currencyexchange/` in your terminal and run the command `npm run test`
+6. to get a API KEY go to https://www.exchangerate-api.com/ and navigate API instructions
+7. copy and paste API KEY to your .env file - API_KEY = APIKEYNUMBER
+</details>
+
+## Known Bugs :no_entry_sign: :bug:
+
+- _None known_
 
 ## License
 
-_{Let people know what to do if they run into any issues or have questions, ideas or concerns.  Encourage them to contact you or make a contribution to the code.}_
+<details>
+  <summary>MIT</summary>
+Copyright <2021> <Seth Medeiros>
 
-## Contact Information
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
 
-_{Add your contact information here.}_
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+</details>
