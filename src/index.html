@@ -11,18 +11,18 @@
   <h1> CURRENCY EXCHANGER</h1>
   <div class="container" id="box">
     <form id="formOne">
-      <input type="number" id="currencyFrom" placeholder="US Dollars">
-      <select name="converter" id="converter">
-        <option value="USA" selected >United States(USA)</option>
+      <input type="number" id="currencyFrom" placeholder="US Dollars" value="1">
+      <select name="converter" id="to">
+        <option value="USD" selected >United States(USA)</option>
         <option value="EUR" >Euro (EUR)</option>
         <option value="INR" >Indian Rupee (INR)</option>
         <option value="JPY" >Japanese Yen (JPY)</option>
        </select>
        <br>
-      <input type="number" id="currencyTo" placeholder="US Dollars">
-      <select name="converter" id="converter">
-        <option value="USA" selected >United States(USA)</option>
-        <option value="EUR" >Euro (EUR)</option>
+      <input type="number" id="currencyTo" placeholder="US Dollars" disabled>
+      <select name="converter" id="from">
+        <option value="USA" >United States(USA)</option>
+        <option value="EUR" selected >Euro (EUR)</option>
         <option value="INR" >Indian Rupee (INR)</option>
         <option value="JPY" >Japanese Yen (JPY)</option>
        </select>
