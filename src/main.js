@@ -5,7 +5,13 @@ import "./css/styles.css";
 // import Convert from './currency-exchanger';
 
 function getElements(response) {
-  if (response.main) {
+  if (response.result === "success") {
+    const convertedCurrency =
+      $("#currencyFrom").val() / response.conversion_rate;
+
+    $("#currencyTo").val(convertedCurrency);
+  } else {
+    $("#currencyTo").text("Sorry we do not support that currency");
   }
 }
 
@@ -13,7 +19,6 @@ $("button#convert").on("click", (event) => {
   event.preventDefault();
   const TO = $("select#to").val();
   const FROM = $("select#from").val();
-  console.log(FROM, TO);
   let request = new XMLHttpRequest();
   const url = `https://v6.exchangerate-api.com/v6/${process.env.API_KEY}/pair/${FROM}/${TO}`;
 
